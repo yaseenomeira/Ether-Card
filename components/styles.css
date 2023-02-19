@@ -1,0 +1,140 @@
+:root{
+    --bg-color: hsl(217, 54%, 11%);
+    --card-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue: hsl(215, 51%, 70%);
+}
+* {
+    font-family: 'Outfit', sans-serif;
+}
+p{
+    font-size: 18px;
+}
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+.card-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 650px;
+    background-color: var(--card-color);
+    border-radius: 20px;
+    box-shadow: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.cooljpg{
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+h2{
+    color: var(--white);
+}
+h2, .description{
+    margin-left: 20px;
+}
+.description{
+    color: var(--soft-blue);
+}
+.item time{
+    display: inline-block;
+}
+.item ether{
+    display: inline-block;
+}
+.item{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.ether, .time{
+    flex: 1;
+}
+
+.ether{
+    text-align: left;
+    width: 75%;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+.time{
+    text-align: right;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.price{
+    color: var(--cyan);
+}
+.hw{
+    color: var(--soft-blue);
+}
+hr{
+    border: 0.5px solid var(--line-color);
+}
+.profile{
+    display: flex;
+    justify-content: left;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.rest{
+    color: var(--soft-blue);
+}
+.name{
+    color: var(--white);
+}
+.icon, .text{
+    vertical-align: middle;
+    display: inline-block;
+}
+h2:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .5s ease;
+}
+.name:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.container{
+    position: relative; 
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .cooljpg {
+    opacity: 0.3;
+}
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
